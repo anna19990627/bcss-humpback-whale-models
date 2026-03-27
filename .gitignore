@@ -1,0 +1,29 @@
+# Data
+Data/
+clean_dfs/
+
+# R session / local files
+.Rhistory
+.RData
+.Rproj.user/
+
+# Model objects / cached workspaces
+models/
+models_behaviour/
+models_gc/
+*.rds
+*.RData
+
+# Outputs
+figs/
+tables/
+predictions/
+
+# Raster / climate files
+*.tif
+*.tiff
+*.nc
+
+# OS junk
+.DS_Store
+Thumbs.db
