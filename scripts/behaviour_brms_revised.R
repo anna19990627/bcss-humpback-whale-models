@@ -40,7 +40,7 @@ library(spdep)
 set.seed(123)
 options(mc.cores = parallel::detectCores())
 
-REFIT_MODELS <- FALSE
+REFIT_MODELS <- TRUE
 
 
 # ==============================================================================
@@ -83,7 +83,7 @@ hw_df <- hw_sf %>%
 # ==============================================================================
 # 3) brms fitting helper
 # ==============================================================================
-ctrl_behav <- list(adapt_delta = 0.99)
+ctrl_behav <- list(adapt_delta = 0.999)
 
 fit_cat <- function(formula, data,
                     knots = NULL,
